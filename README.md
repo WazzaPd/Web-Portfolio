@@ -16,3 +16,9 @@ This repository contains the source code for my personal website, which serves a
 
 - HTML5
 - CSS3
+
+## Future Plans
+
+- increase font size of header
+- add more media queries for larger sizes.
+- make the page look better
