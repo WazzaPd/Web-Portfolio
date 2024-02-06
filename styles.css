@@ -136,6 +136,43 @@ section {
     opacity: 0.7;
 }
 
+.headerText {
+    margin-bottom: 24px;
+}
+
+.projectContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.project-item {
+    display: flex;
+    align-items: stretch;
+    gap: 24px;
+    border: solid;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.project-item div:first-child{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.project-item div:last-child{
+    aspect-ratio: 22/9;
+    max-width: 40%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.project-item div:last-child img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 @media (min-width: 640px) {
     .stats-container {
