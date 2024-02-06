@@ -8,7 +8,9 @@ This repository contains the source code for my personal website, which serves a
 
 ## Features
 
--
+- Responsive design for optimal viewing on various devices.
+- Project showcase with descriptions and links.
+- Contact information for communication.
 
 ## Technologies Used
 
