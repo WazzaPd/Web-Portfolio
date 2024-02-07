@@ -69,6 +69,7 @@ section,
 }
 
 main {
+    padding: 14px;
     gap: 64px;
     padding-bottom: 64px;
 }

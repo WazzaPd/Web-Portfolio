@@ -19,6 +19,6 @@ This repository contains the source code for my personal website, which serves a
 
 ## Future Plans
 
-- increase font size of header
 - add more media queries for larger sizes.
 - make the page look better
+- replace current header links to page anchor links
