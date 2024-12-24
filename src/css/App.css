@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Base styling */
+  .app-container {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Smooth scrolling for anchor links */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Keep main spaced out between sections */
+  main {
+    display: flex;
+    flex-direction: column;
+  }

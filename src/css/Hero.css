@@ -1,0 +1,79 @@
+.hero-section {
+    /* Push below navbar. If navbar's height is 60px, use 60px here. */
+    margin-top: 60px;                
+    /* Fill the rest of the viewport minus the navbar */
+    height: calc(75vh - 60px);      
+  
+    /* Center child elements horizontally and vertically */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    background-color: #444; /* or your preferred color / image */
+    position: relative;
+  }
+  
+  /* If you’re not using an image, no overlay is needed.
+     If you do use an image, you can optionally add an overlay. */
+  .hero-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* The text container */
+  .hero-content {
+    top: -1rem;
+    position: relative;
+    z-index: 2; 
+    text-align: center;
+    color: #fff;
+  
+    /* Limit how wide the text can stretch */
+    max-width: 600px; 
+    padding: 0 1rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-button {
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 0.8rem 1.4rem;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+  .hero-button:hover {
+    background-color: #ff8787;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .navbar {
+      height: 50px; /* if you reduce the navbar height on mobile */
+    }
+    .hero-section {
+      margin-top: 50px;
+      height: calc(80vh - 50px);
+    }
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+  }
+  
