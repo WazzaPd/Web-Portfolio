@@ -2,6 +2,7 @@
 import React from 'react';
 import '../css/Projects.css';
 import { motion } from 'framer-motion';
+import projectOneImage from '../assets/phreddit.png';
 
 function Projects() {
   const projects = [
@@ -9,7 +10,7 @@ function Projects() {
       id: 1,
       title: 'Phreddit',
       description: 'Full-stack social media platform inspired by Reddit, enabling users to create accounts, post content, comment, upvote/downvote, and join communities.',
-      image: '/../../public/phreddit.png',
+      image: projectOneImage,
       gitlink: 'https://github.com/WazzaPd/Phreddit',
       link: 'https://phreddit-deployment-frontend.onrender.com/'
     },
@@ -60,6 +61,7 @@ function Projects() {
               >
                 View on Website
               </a>
+              <br></br>
               <a 
                 href={project.gitlink} 
                 target="_blank" 
