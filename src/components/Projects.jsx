@@ -7,24 +7,27 @@ function Projects() {
   const projects = [
     {
       id: 1,
-      title: 'Project One',
-      description: 'Description',
-      image: 'https://via.placeholder.com/300x200',
-      link: 'https://github.com/example/project-one'
+      title: 'Phreddit',
+      description: 'Full-stack social media platform inspired by Reddit, enabling users to create accounts, post content, comment, upvote/downvote, and join communities.',
+      image: '/../../public/phreddit.png',
+      gitlink: 'https://github.com/WazzaPd/Phreddit',
+      link: 'https://phreddit-deployment-frontend.onrender.com/'
     },
     {
       id: 2,
       title: 'Project Two',
       description: 'Description',
       image: 'https://via.placeholder.com/300x200',
-      link: 'https://github.com/example/project-two'
+      gitlink: 'https://github.com/example/project-two',
+      link: 'https://github.com/example/project-one'
     },
     {
       id: 3,
       title: 'Project Three',
       description: 'Full-stack app with React, Express, and MongoDB.',
       image: 'https://via.placeholder.com/300x200',
-      link: 'https://github.com/example/project-three'
+      gitlink: 'https://github.com/example/project-three',
+      link: 'https://github.com/example/project-one'
     }
   ];
 
@@ -51,6 +54,14 @@ function Projects() {
               <p>{project.description}</p>
               <a 
                 href={project.link} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                View on Website
+              </a>
+              <a 
+                href={project.gitlink} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="project-link"
